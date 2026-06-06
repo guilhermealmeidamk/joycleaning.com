@@ -112,6 +112,36 @@ if (carouselViewport) {
   init()
 }
 
+// ── Rising page bubbles ───────────────────────────────────────────────────────
+;(function () {
+  const sizes    = [6, 8, 10, 12, 14, 18, 22]
+  const durations = [9, 11, 13, 15, 17]
+
+  function spawn () {
+    const el   = document.createElement('span')
+    const size = sizes[Math.floor(Math.random() * sizes.length)]
+    const dur  = durations[Math.floor(Math.random() * durations.length)]
+    const left = Math.random() * 96 + 2          // 2–98 vw
+    const delay = Math.random() * 1.5            // slight stagger
+
+    el.className = 'page-bubble'
+    el.style.cssText = `
+      width:${size}px;
+      height:${size}px;
+      left:${left}vw;
+      animation-duration:${dur}s;
+      animation-delay:${delay}s;
+      opacity:0;
+    `
+    document.body.appendChild(el)
+    el.addEventListener('animationend', () => el.remove())
+  }
+
+  // spawn one immediately, then every ~1.8 s
+  spawn()
+  setInterval(spawn, 1800)
+})()
+
 // ── FAQ accordion ─────────────────────────────────────────────────────────────
 document.querySelectorAll('[data-faq-btn]').forEach((btn) => {
   btn.addEventListener('click', () => {

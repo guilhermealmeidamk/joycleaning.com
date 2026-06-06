@@ -79,6 +79,26 @@ body  { font-family: var(--font-sans); color: var(--color-ink); background: var(
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
+/* ── Rising page bubbles ─────────────────── */
+.page-bubble {
+  position: fixed;
+  bottom: -40px;
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 9999;
+  background: radial-gradient(circle at 32% 28%, rgba(255,255,255,.85), rgba(0,167,181,.18));
+  border: 1px solid rgba(0,167,181,.22);
+  animation: rise-bubble linear forwards;
+}
+@keyframes rise-bubble {
+  0%   { transform: translate(0, 0);         opacity: 0; }
+  12%  { opacity: 1; }
+  38%  { transform: translate(-10px, -38vh); }
+  62%  { transform: translate( 10px, -62vh); }
+  85%  { opacity: .25; }
+  100% { transform: translate(-4px, -108vh); opacity: 0; }
+}
+
 /* ── Grain texture ────────────────────────── */
 .grain {
   background-image: radial-gradient(rgba(12,37,53,.04) 1px, transparent 1px);
