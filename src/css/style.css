@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-ink:    #0c2535;
+  --color-teal:   #00a7b5;
+  --color-tealdk: #007e8a;
+  --color-amber:  #F46DDC;
+  --color-mint:   #e6f7f8;
+  --color-cream:  #fbf8f2;
+
+  --font-display: 'Fraunces', serif;
+  --font-sans:    'Plus Jakarta Sans', sans-serif;
+}
+
+/* ── Base ─────────────────────────────────── */
+html  { scroll-behavior: smooth; }
+body  { font-family: var(--font-sans); color: var(--color-ink); background: var(--color-cream); }
+
+/* ── Header glass ─────────────────────────── */
+.nav-glass {
+  background: rgba(251, 248, 242, 0.82);
+  backdrop-filter: saturate(160%) blur(12px);
+  -webkit-backdrop-filter: saturate(160%) blur(12px);
+}
+
+/* ── Blob orgânico ────────────────────────── */
+.blob {
+  border-radius: 42% 58% 63% 37% / 41% 44% 56% 59%;
+  animation: morph 14s ease-in-out infinite;
+}
+@keyframes morph {
+  0%, 100% { border-radius: 42% 58% 63% 37% / 41% 44% 56% 59%; }
+  50%       { border-radius: 58% 42% 38% 62% / 56% 61% 39% 44%; }
+}
+
+/* ── Bolhas flutuantes ────────────────────── */
+.bubble {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.9), rgba(0,167,181,.15));
+  animation: float 7s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-14px); }
+}
+
+/* ── Reveal on load ───────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: rise .8s cubic-bezier(.2,.7,.2,1) forwards;
+}
+@keyframes rise { to { opacity: 1; transform: translateY(0); } }
+
+/* ── Buttons ──────────────────────────────── */
+.btn-primary {
+  background: var(--color-teal);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  box-shadow: 0 10px 24px -8px rgba(0,167,181,.55);
+}
+.btn-primary:hover {
+  background: var(--color-tealdk);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px -8px rgba(0,167,181,.6);
+}
+
+/* ── Form fields ──────────────────────────── */
+.field { transition: border-color .2s ease, box-shadow .2s ease; }
+.field:focus {
+  outline: none;
+  border-color: var(--color-teal);
+  box-shadow: 0 0 0 4px rgba(0,167,181,.14);
+}
+
+/* ── Hide scrollbar (carousel) ───────────── */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ── Grain texture ────────────────────────── */
+.grain {
+  background-image: radial-gradient(rgba(12,37,53,.04) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
