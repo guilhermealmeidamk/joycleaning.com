@@ -80,58 +80,109 @@
         </p>
       </div>
 
-      <!-- Card options -->
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-14">
-
-        <!-- $75 -->
-        <div class="group relative bg-white rounded-3xl border-2 border-black/5 hover:border-teal shadow-sm hover:shadow-xl hover:shadow-teal/10 p-7 transition-all duration-300 hover:-translate-y-1.5 cursor-pointer">
-          <div class="absolute top-5 right-5 w-10 h-10 rounded-full bg-mint text-tealdk grid place-items-center">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"/></svg>
-          </div>
-          <div class="font-display text-5xl font-bold text-teal leading-none mb-2">$75</div>
-          <p class="text-ink/70 text-sm font-semibold">Starter Clean</p>
-          <p class="text-ink/55 text-xs leading-relaxed mt-2">Great for a quick refresh — covers a regular cleaning for a small apartment or studio.</p>
+      <!-- First Cleaning -->
+      <div class="mb-12">
+        <div class="flex items-center gap-3 mb-5">
+          <span class="font-display font-semibold text-ink text-xl">First Cleaning</span>
+          <span class="text-xs font-semibold text-tealdk bg-mint px-3 py-1 rounded-full">For homes never professionally cleaned</span>
         </div>
+        <div class="grid sm:grid-cols-2 gap-5">
 
-        <!-- $150 -->
-        <div class="group relative bg-white rounded-3xl border-2 border-black/5 hover:border-teal shadow-sm hover:shadow-xl hover:shadow-teal/10 p-7 transition-all duration-300 hover:-translate-y-1.5 cursor-pointer">
-          <div class="absolute top-5 right-5 w-10 h-10 rounded-full bg-mint text-tealdk grid place-items-center">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"/></svg>
+          <!-- $200 -->
+          <div data-gift="First Cleaning — Starting at $200" class="group relative bg-white rounded-3xl border-2 border-black/5 hover:border-teal shadow-sm hover:shadow-xl hover:shadow-teal/10 p-7 transition-all duration-300 hover:-translate-y-1.5 cursor-pointer">
+            <div class="absolute top-5 right-5 w-10 h-10 rounded-full bg-mint text-tealdk grid place-items-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"/></svg>
+            </div>
+            <div class="font-display text-5xl font-bold text-teal leading-none mb-1">$200</div>
+            <p class="text-teal text-xs font-semibold mb-2">Starting price</p>
+            <p class="text-ink/70 text-sm font-semibold">First Cleaning Gift Card</p>
+            <p class="text-ink/55 text-xs leading-relaxed mt-2">A full first-time clean for a home that's never been professionally cleaned. Price may vary by home size — call us for a quote.</p>
           </div>
-          <div class="font-display text-5xl font-bold text-teal leading-none mb-2">$150</div>
-          <p class="text-ink/70 text-sm font-semibold">Home Refresh</p>
-          <p class="text-ink/55 text-xs leading-relaxed mt-2">Perfect for a standard 2-3 bedroom home. Cover a full regular cleaning or partial deep clean.</p>
+
+          <!-- Open amount -->
+          <div data-gift="First Cleaning — Custom Amount" class="group relative bg-white rounded-3xl border-2 border-dashed border-teal/30 hover:border-teal shadow-sm hover:shadow-xl hover:shadow-teal/10 p-7 transition-all duration-300 hover:-translate-y-1.5 cursor-pointer flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-full bg-mint text-tealdk grid place-items-center mb-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+              </div>
+              <p class="text-ink/70 text-sm font-semibold">Custom Amount</p>
+              <p class="text-ink/55 text-xs leading-relaxed mt-2">Let the recipient choose the cleaning that fits their home. We'll create a gift card for any value — just call us!</p>
+            </div>
+            <a href="tel:+14708548885" class="mt-5 inline-flex items-center gap-1.5 text-tealdk font-semibold text-sm hover:underline">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+              Call us to order
+            </a>
+          </div>
+
         </div>
-
-        <!-- $250 — most popular -->
-        <div class="group relative bg-teal rounded-3xl border-2 border-teal shadow-lg shadow-teal/25 p-7 transition-all duration-300 hover:-translate-y-1.5 cursor-pointer">
-          <div class="absolute -top-3 left-1/2 -translate-x-1/2">
-            <span class="bg-amber text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">Most Popular</span>
-          </div>
-          <div class="absolute top-5 right-5 w-10 h-10 rounded-full bg-white/20 text-white grid place-items-center">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"/></svg>
-          </div>
-          <div class="font-display text-5xl font-bold text-white leading-none mb-2">$250</div>
-          <p class="text-white/90 text-sm font-semibold">Deep Clean Gift</p>
-          <p class="text-white/70 text-xs leading-relaxed mt-2">The crowd favorite. Covers a full deep cleaning for most homes — the best gift for moving in or a special occasion.</p>
-        </div>
-
-        <!-- $350 -->
-        <div class="group relative bg-white rounded-3xl border-2 border-black/5 hover:border-teal shadow-sm hover:shadow-xl hover:shadow-teal/10 p-7 transition-all duration-300 hover:-translate-y-1.5 cursor-pointer">
-          <div class="absolute top-5 right-5 w-10 h-10 rounded-full bg-mint text-tealdk grid place-items-center">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"/></svg>
-          </div>
-          <div class="font-display text-5xl font-bold text-teal leading-none mb-2">$350</div>
-          <p class="text-ink/70 text-sm font-semibold">Premium Package</p>
-          <p class="text-ink/55 text-xs leading-relaxed mt-2">The ultimate gift. Covers a large home deep clean or a move-in/move-out cleaning. Truly unforgettable.</p>
-        </div>
-
       </div>
 
-      <!-- Custom amount note -->
+      <!-- Deep Cleaning -->
+      <div class="mb-14">
+        <div class="flex items-center gap-3 mb-5">
+          <span class="font-display font-semibold text-ink text-xl">Deep Cleaning</span>
+          <span class="text-xs font-semibold text-amber bg-amber/10 px-3 py-1 rounded-full">$99/hour · min. 3 hours</span>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+          <!-- 3h = $297 -->
+          <div data-gift="Deep Cleaning — $297 (3 hours)" class="group relative bg-teal rounded-3xl border-2 border-teal shadow-lg shadow-teal/25 p-7 transition-all duration-300 hover:-translate-y-1.5 cursor-pointer">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+              <span class="bg-amber text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">Most Popular</span>
+            </div>
+            <div class="absolute top-5 right-5 w-10 h-10 rounded-full bg-white/20 text-white grid place-items-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"/></svg>
+            </div>
+            <div class="font-display text-5xl font-bold text-white leading-none mb-1">$297</div>
+            <p class="text-white/70 text-xs font-semibold mb-2">3 hours</p>
+            <p class="text-white/90 text-sm font-semibold">Deep Clean · 3h</p>
+            <p class="text-white/70 text-xs leading-relaxed mt-2">Our minimum deep cleaning package. Thorough top-to-bottom clean perfect for most homes.</p>
+          </div>
+
+          <!-- 4h = $396 -->
+          <div data-gift="Deep Cleaning — $396 (4 hours)" class="group relative bg-white rounded-3xl border-2 border-black/5 hover:border-teal shadow-sm hover:shadow-xl hover:shadow-teal/10 p-7 transition-all duration-300 hover:-translate-y-1.5 cursor-pointer">
+            <div class="absolute top-5 right-5 w-10 h-10 rounded-full bg-mint text-tealdk grid place-items-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"/></svg>
+            </div>
+            <div class="font-display text-5xl font-bold text-teal leading-none mb-1">$396</div>
+            <p class="text-teal/70 text-xs font-semibold mb-2">4 hours</p>
+            <p class="text-ink/70 text-sm font-semibold">Deep Clean · 4h</p>
+            <p class="text-ink/55 text-xs leading-relaxed mt-2">Extra time for larger homes or spaces that need more detailed attention.</p>
+          </div>
+
+          <!-- 5h = $495 -->
+          <div data-gift="Deep Cleaning — $495 (5 hours)" class="group relative bg-white rounded-3xl border-2 border-black/5 hover:border-teal shadow-sm hover:shadow-xl hover:shadow-teal/10 p-7 transition-all duration-300 hover:-translate-y-1.5 cursor-pointer">
+            <div class="absolute top-5 right-5 w-10 h-10 rounded-full bg-mint text-tealdk grid place-items-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"/></svg>
+            </div>
+            <div class="font-display text-5xl font-bold text-teal leading-none mb-1">$495</div>
+            <p class="text-teal/70 text-xs font-semibold mb-2">5 hours</p>
+            <p class="text-ink/70 text-sm font-semibold">Deep Clean · 5h</p>
+            <p class="text-ink/55 text-xs leading-relaxed mt-2">Ideal for bigger homes or move-in/move-out situations that need a thorough, unhurried clean.</p>
+          </div>
+
+          <!-- Custom hours -->
+          <div data-gift="Deep Cleaning — Custom Hours ($99/hour)" class="group relative bg-white rounded-3xl border-2 border-dashed border-teal/30 hover:border-teal shadow-sm hover:shadow-xl hover:shadow-teal/10 p-7 transition-all duration-300 hover:-translate-y-1.5 cursor-pointer flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-full bg-mint text-tealdk grid place-items-center mb-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+              </div>
+              <p class="text-ink/70 text-sm font-semibold">More Hours</p>
+              <p class="text-ink/55 text-xs leading-relaxed mt-2">Need 6, 7, or more hours? Add as many hours as you like at <span class="font-semibold text-tealdk">$99/hour</span>. We'll build the right gift card for you.</p>
+            </div>
+            <a href="tel:+14708548885" class="mt-5 inline-flex items-center gap-1.5 text-tealdk font-semibold text-sm hover:underline">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+              Call us to order
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Bottom note -->
       <div class="text-center bg-white rounded-3xl border border-teal/15 shadow-sm p-6 max-w-xl mx-auto">
-        <p class="text-ink/70 font-medium text-sm">Need a custom amount or a different service?</p>
-        <p class="text-ink/55 text-xs mt-1 mb-4">We're happy to create a gift card for any value. Just reach out!</p>
+        <p class="text-ink/70 font-medium text-sm">Not sure which to pick?</p>
+        <p class="text-ink/55 text-xs mt-1 mb-4">Call or text us — we'll help you choose the right gift card for any home and occasion.</p>
         <a href="tel:+14708548885" class="btn-primary inline-flex items-center gap-2 text-white font-bold px-6 py-3 rounded-full text-sm">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
           Call or text us: (470) 854-8885
@@ -262,5 +313,163 @@
   <!-- @include "src/partials/_footer.html" -->
 
   <script type="module" src="/src/js/main.js"></script>
+
+  <!-- ===================== GIFT CARD MODAL ===================== -->
+  <div id="giftModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4">
+    <div id="giftModalBackdrop" class="absolute inset-0 bg-ink/60 backdrop-blur-sm"></div>
+    <div class="relative bg-white rounded-3xl shadow-2xl w-full max-w-md mx-auto overflow-hidden animate-none" style="max-height:90vh;overflow-y:auto">
+      <!-- Header -->
+      <div class="bg-teal px-7 pt-7 pb-6 sticky top-0 z-10">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <p class="text-white/70 text-xs font-semibold uppercase tracking-widest mb-1">Gift Card Order</p>
+            <h3 id="giftModalTitle" class="font-display font-semibold text-white text-xl leading-tight"></h3>
+          </div>
+          <button id="giftModalClose" type="button" class="shrink-0 w-9 h-9 rounded-full bg-white/20 text-white hover:bg-white/30 transition-colors grid place-items-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+      <!-- Form -->
+      <form id="giftForm" class="px-7 py-6 space-y-4">
+
+        <!-- Hours picker — visible only for Custom Hours deep clean -->
+        <div id="hoursField" class="hidden bg-mint/50 rounded-2xl p-5">
+          <label class="block text-xs font-semibold text-ink/60 uppercase tracking-widest mb-3">Number of hours</label>
+          <div class="flex items-center gap-4">
+            <button type="button" id="hoursDown"
+              class="w-11 h-11 rounded-full bg-white border-2 border-black/10 text-ink text-xl font-bold grid place-items-center hover:border-teal hover:text-teal transition-colors disabled:opacity-30 disabled:cursor-not-allowed">−</button>
+            <div class="flex-1 text-center">
+              <div class="font-display text-5xl font-bold text-teal leading-none" id="hoursCount">6</div>
+              <div class="text-xs text-ink/50 mt-1">hours</div>
+            </div>
+            <button type="button" id="hoursUp"
+              class="w-11 h-11 rounded-full bg-white border-2 border-black/10 text-ink text-xl font-bold grid place-items-center hover:border-teal hover:text-teal transition-colors">+</button>
+          </div>
+          <div class="text-center mt-4 bg-white rounded-xl py-2.5 px-4">
+            <span class="font-display font-bold text-teal text-2xl">$<span id="hoursPrice">594</span></span>
+            <span class="text-ink/40 text-xs ml-1">total · $99/hour</span>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-ink/60 uppercase tracking-widest mb-1.5">Your name <span class="text-rose-400">*</span></label>
+          <input type="text" name="buyerName" required placeholder="Jane Smith"
+            class="w-full border border-black/10 rounded-xl px-4 py-3 text-sm text-ink placeholder:text-ink/30 focus:outline-none focus:border-teal focus:ring-2 focus:ring-teal/20 transition-colors" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-ink/60 uppercase tracking-widest mb-1.5">Recipient's name <span class="text-rose-400">*</span></label>
+          <input type="text" name="recipientName" required placeholder="Who's receiving this gift?"
+            class="w-full border border-black/10 rounded-xl px-4 py-3 text-sm text-ink placeholder:text-ink/30 focus:outline-none focus:border-teal focus:ring-2 focus:ring-teal/20 transition-colors" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-ink/60 uppercase tracking-widest mb-1.5">Send card to <span class="text-rose-400">*</span></label>
+          <input type="text" name="delivery" required placeholder="Phone or email of recipient"
+            class="w-full border border-black/10 rounded-xl px-4 py-3 text-sm text-ink placeholder:text-ink/30 focus:outline-none focus:border-teal focus:ring-2 focus:ring-teal/20 transition-colors" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-ink/60 uppercase tracking-widest mb-1.5">Occasion <span class="text-ink/30 normal-case font-normal tracking-normal">(optional)</span></label>
+          <input type="text" name="occasion" placeholder="Birthday, Housewarming, Mother's Day…"
+            class="w-full border border-black/10 rounded-xl px-4 py-3 text-sm text-ink placeholder:text-ink/30 focus:outline-none focus:border-teal focus:ring-2 focus:ring-teal/20 transition-colors" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-ink/60 uppercase tracking-widest mb-1.5">Personal message <span class="text-ink/30 normal-case font-normal tracking-normal">(optional)</span></label>
+          <textarea name="message" rows="3" placeholder="Add a personal note to include with the gift card…"
+            class="w-full border border-black/10 rounded-xl px-4 py-3 text-sm text-ink placeholder:text-ink/30 focus:outline-none focus:border-teal focus:ring-2 focus:ring-teal/20 transition-colors resize-none"></textarea>
+        </div>
+        <button type="submit" class="btn-primary w-full flex items-center justify-center gap-2 text-white font-bold px-6 py-3.5 rounded-full text-sm">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/></svg>
+          Send order via text
+        </button>
+        <p class="text-center text-ink/40 text-xs pb-1">You'll be redirected to your messaging app with the order pre-filled. We'll confirm everything shortly.</p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+  (function () {
+    var modal = document.getElementById('giftModal');
+    var backdrop = document.getElementById('giftModalBackdrop');
+    var closeBtn = document.getElementById('giftModalClose');
+    var titleEl = document.getElementById('giftModalTitle');
+    var form = document.getElementById('giftForm');
+    var hoursField = document.getElementById('hoursField');
+    var hoursCountEl = document.getElementById('hoursCount');
+    var hoursPriceEl = document.getElementById('hoursPrice');
+    var hoursDownBtn = document.getElementById('hoursDown');
+    var hoursUpBtn = document.getElementById('hoursUp');
+    var PHONE = '+14708548885';
+    var CUSTOM_KEY = 'Deep Cleaning — Custom Hours ($99/hour)';
+    var MIN_HOURS = 6;
+    var currentHours = MIN_HOURS;
+    var isCustomHours = false;
+
+    function updateHoursDisplay() {
+      hoursCountEl.textContent = currentHours;
+      hoursPriceEl.textContent = currentHours * 99;
+      hoursDownBtn.disabled = currentHours <= MIN_HOURS;
+    }
+
+    function openModal(label) {
+      isCustomHours = label === CUSTOM_KEY;
+      titleEl.textContent = label;
+      if (isCustomHours) {
+        currentHours = MIN_HOURS;
+        updateHoursDisplay();
+        hoursField.classList.remove('hidden');
+      } else {
+        hoursField.classList.add('hidden');
+      }
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+      form.reset();
+    }
+
+    document.querySelectorAll('[data-gift]').forEach(function (card) {
+      card.addEventListener('click', function (e) {
+        if (e.target.closest('a')) return;
+        openModal(card.dataset.gift);
+      });
+    });
+
+    hoursDownBtn.addEventListener('click', function () {
+      if (currentHours > MIN_HOURS) { currentHours--; updateHoursDisplay(); }
+    });
+
+    hoursUpBtn.addEventListener('click', function () {
+      currentHours++; updateHoursDisplay();
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    backdrop.addEventListener('click', closeModal);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var data = Object.fromEntries(new FormData(form));
+      var service = isCustomHours
+        ? 'Deep Cleaning — ' + currentHours + ' hours ($' + (currentHours * 99) + ' total)'
+        : titleEl.textContent;
+
+      var body = 'Hi Joy Cleaning! I\'d like to order a gift card 🎁\n\nService: ' + service
+        + '\nFor: ' + data.recipientName
+        + '\nSend card to: ' + data.delivery;
+      if (data.occasion) body += '\nOccasion: ' + data.occasion;
+      if (data.message) body += '\nMessage: “' + data.message + '”';
+      body += '\n\nFrom: ' + data.buyerName;
+
+      window.location.href = 'sms:' + PHONE + '?body=' + encodeURIComponent(body);
+    });
+  })();
+  </script>
 </body>
 </html>
